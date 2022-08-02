@@ -1,0 +1,24 @@
+{
+  "name": "tree-visualizer",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "./public/index.html",
+  "scripts": {
+    "dev": "parcel ./public/index.html",
+    "build": "parcel build ./public/index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Kunal singh",
+  "license": "ISC",
+  "dependencies": {
+    "bin": "0.0.0",
+    "binary-tree-visualizer": "^2.1.5",
+    "serve": "^13.0.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3",
+    "parcel-bundler": "^1.12.5"
+  }
+}

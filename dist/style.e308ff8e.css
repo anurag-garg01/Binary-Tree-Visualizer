@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'lato', Arial, Helvetica, sans-serif;
+  }
+
+  body,
+  html {
+    background: rgb(240, 240, 240);
+    min-height: 100vh;
+  }
+  h3 {
+    font-size: 1.1rem;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  }
+  nav {
+    padding: 1rem 0;
+    background: #2a832f;
+  }
+
+  nav:hover {
+    box-shadow: 0 6px 10px 9px rgb(194, 191, 191);
+    transition: .25s;
+  }
+
+  .container {
+    width: 1152px;
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  nav .container a {
+    text-decoration: none;
+    outline: none;
+    color: rgb(255, 242, 224);
+  }
+
+  nav .container h1 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .container img {
+    width: 50px;
+    height: 30px;
+    margin-left: 2rem;
+  }
+
+  .all-rules {
+    margin: 2rem;
+    border: 1px dotted #ccc;
+    padding: 20px;
+    font-weight: 600;
+    line-height: 1.5rem;
+    font-family: 'Lato', "Poppins", Arial, Helvetica, sans-serif;
+  }
+
+  .all-rules p {
+    color: #2a832f;
+  }
+
+  .all-rules p span {
+    color: #060706;
+  }
+
+  .error {
+    display: none;
+    color: #ff152de3;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    animation: shake .3s 1 ease-in-out;
+    text-align: center;
+    font-weight: 600;
+  }
+
+  @keyframes shake {
+    0% {
+      transform: translate(30px);
+    }
+
+    20% {
+      transform: translate(-30px);
+    }
+
+    40% {
+      transform: translate(15px);
+    }
+
+    60% {
+      transform: translate(-15px);
+    }
+
+    80% {
+      transform: translate(8px);
+    }
+
+    100% {
+      transform: translate(0px);
+    }
+  }
+
+  .input {
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    max-width: 90%;
+    padding: 1rem;
+  }
+ .inputData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  } 
+
+  .inputData input {
+    margin-left: 2rem;
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    color: rgb(42, 131, 47);
+    font-weight: 600;
+    width: 60%;
+    border-bottom: 1.3px solid rgb(146, 149, 151);
+    transition: .25s;
+    padding-bottom: 9px;
+  }
+  .inputData input::placeholder {
+    color: rgb(146, 149, 151);
+    letter-spacing: 0rem;
+    font-weight: normal;
+}
+
+.inputData input:is(:focus) {
+    border-bottom: 2px solid rgb(42, 131, 47);
+  }
+
+  .enterBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn {
+    border: none;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: .9em;
+    margin: 30px 10px;
+    background: transparent;
+    color: rgb(42, 131, 47);
+    padding: 7px 25px;
+    border: 2px solid;
+    text-transform: uppercase;
+    border-radius: 7px;
+    letter-spacing: .09rem;
+    cursor: pointer;
+  }
+
+  .canvas-container {
+    width: 1000px;
+    margin: 0 auto;
+    max-width: 90%;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn:hover {
+    background: rgb(42, 131, 47);
+    color: #fff;
+    transition: .25s;
+  }
+
+  .result {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .reset {
+    display: none;
+  }
+
+  #suggest {
+    color: #000;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1.3rem;
+  }
+  
+  /* responsiveness */
+  @media screen and (max-width: 720px) {
+input {
+      min-width: 20.3rem;
+    }
+    nav .container h1{
+      font-size: 1.9rem;
+    }
+  }
+  
+  @media screen and (max-width: 546px) {
+.inputData {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .inputData h3{
+    margin-bottom: 1.3rem;
+    }
+    
+  }
+  
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
